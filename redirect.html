@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirect</title>
+</head>
+<body>
+  <div id="code"></div>
+  <script>
+    const codeElement = document.getElementById('code'); 
+    const href = window.location.href;
+    const url = new URL(href);
+    const code = url.searchParams.get('code');
+    codeElement.innerHTML = `<p>Your code is: <b>${code}<b></p>`
+  </script>
+</body>
+</html>

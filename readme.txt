@@ -1,0 +1,1 @@
+The frontend part must be open using live server on port: 5500
